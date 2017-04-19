@@ -1,1 +1,40 @@
-{     "devDependencies": {         "facebook-node-sdk": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-facebook-node-sdk",     "homepage": "https://github.com/npmtest/node-npmtest-facebook-node-sdk",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-facebook-node-sdk.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [facebook-node-sdk (v0.2.0)](https://github.com/amachang/facebook-node-sdk#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-facebook-node-sdk.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-facebook-node-sdk) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-facebook-node-sdk.svg)](https://travis-ci.org/npmtest/node-npmtest-facebook-node-sdk)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "facebook-node-sdk": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-facebook-node-sdk",
+    "keywords": [
+        "coverage",
+        "test",
+        "facebook-node-sdk"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_facebook_node_sdk.js",
+    "name": "npmtest-facebook-node-sdk",
+    "nameAlias": "npmtest_facebook_node_sdk",
+    "nameOriginal": "npmtest-facebook-node-sdk",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-facebook-node-sdk.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
