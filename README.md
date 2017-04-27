@@ -1,6 +1,6 @@
 # npmtest-facebook-node-sdk
 
-#### test coverage for  [facebook-node-sdk (v0.2.0)](https://github.com/amachang/facebook-node-sdk#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-facebook-node-sdk.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-facebook-node-sdk) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-facebook-node-sdk.svg)](https://travis-ci.org/npmtest/node-npmtest-facebook-node-sdk)
+#### basic test coverage for  [facebook-node-sdk (v0.2.0)](https://github.com/amachang/facebook-node-sdk#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-facebook-node-sdk.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-facebook-node-sdk) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-facebook-node-sdk.svg)](https://travis-ci.org/npmtest/node-npmtest-facebook-node-sdk)
 
 #### Node.js SDK for the Facebook API
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-facebook-node-sdk/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-facebook-node-sdk/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-facebook-node-sdk/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-facebook-node-sdk/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-facebook-node-sdk/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-facebook-node-sdk/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-facebook-node-sdk/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-facebook-node-sdk/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-facebook-node-sdk/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-facebook-node-sdk/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-facebook-node-sdk/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-facebook-node-sdk/build/coverage.html/index.html)
 
@@ -80,7 +80,8 @@
     "tags": [
         "facebook"
     ],
-    "version": "0.2.0"
+    "version": "0.2.0",
+    "bin": {}
 }
 ```
 
